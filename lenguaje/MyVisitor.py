@@ -3,7 +3,7 @@ from .GrammarParser import GrammarParser
 
 class MyVisitor(GrammarVisitor):
     # Definimos la memoria o el entorno
-    def _init_(self):
+    def __init__(self):
         self.memory = { }
 
     #Visita nuestro programa
