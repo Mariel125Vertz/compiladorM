@@ -17,7 +17,7 @@ function App() {
     setOutput(''); //Limpiar salida anterior
     try {
       const req = await axios.post('https://compiladorm.onrender.com/api/code', code);
-      await setOutput(req.data.output);
+
     } catch(error){
       console.error("Error al enviar el código: ", error);
       setOutput("Error al procesar la solicitud."); //Mostrar mensaje de error al usuario
